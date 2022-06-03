@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ATLATestQuest">
+    <output-path>$PROJECT_DIR$/out/artifacts/ATLATestQuest</output-path>
+    <root id="archive" name="ATLATestQuest.jar">
+      <element id="module-output" name="ATLATestQuest" />
+    </root>
+  </artifact>
+</component>
