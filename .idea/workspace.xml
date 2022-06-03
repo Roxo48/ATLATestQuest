@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca3ea107-e0bb-4cdf-9c76-acd54a6ea7cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ATLATestQuest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/craftbukkit_1_17_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATLATestQuest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/ATLATestQuest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/emun/Stages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPCCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/PacketReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/AirNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/EarthNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/FireNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/WaterNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npccommands/AirNPCCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npccommands/EarthNPCCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npccommands/FireNPCCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npccommands/WaterNPCCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/ClickNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/JoinNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/MovementListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/RightClickNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/questmanager/QuestManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="ca3ea107-e0bb-4cdf-9c76-acd54a6ea7cf" name="Changes" comment="Starting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +16,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Start" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -65,6 +42,12 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654274150551</updated>
     </task>
+    <task id="LOCAL-00001" summary="Starting">
+      <created>1654297112848</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654297112848</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Starting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting" />
   </component>
 </project>
