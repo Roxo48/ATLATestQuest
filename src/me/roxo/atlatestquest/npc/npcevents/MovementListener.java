@@ -29,7 +29,7 @@ public class MovementListener implements Listener {
 
             connection.sendPacket(new PacketPlayOutEntityHeadRotation(npc, (byte) ((yaw%360)*256/360)));
             connection.sendPacket(new PacketPlayOutEntity.PacketPlayOutEntityLook(npc.getBukkitEntity().getEntityId(), (byte) ((yaw%360)*256/360), (byte) ((pitch%360)*256/360) , false));
-
+            connection.sendPacket(new PacketPlayOutEntity.PacketPlayOutRelEntityMoveLook(1,(short) 1, (short) 1, (short) 1,(byte) (npc.getHeadY() * 256/360),(byte) (npc.getHeadY() * 256/360),true));
 
 
 

@@ -1,18 +1,19 @@
 package me.roxo.atlatestquest.npc.npcevents;
 
-import me.roxo.spiritwars.SpiritWars;
-import me.roxo.spiritwars.guis.VillagerGui;
+
+import me.roxo.atlatestquest.ATLATestQuest;
+import me.roxo.atlatestquest.emun.Stages;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 public class ClickNPC implements Listener {
 
-        private VillagerGui villagerGui;
-        private final SpiritWars plugin;
-        public ClickNPC(SpiritWars plugin){
+
+        private final ATLATestQuest plugin;
+        public ClickNPC(ATLATestQuest plugin){
             this.plugin = plugin;
-            this.villagerGui = new VillagerGui(plugin);
+
 
 
         }
@@ -21,36 +22,9 @@ public class ClickNPC implements Listener {
     public void onClick(RightClickNPC e) {
         Player player = e.getPlayer();
         player.sendMessage("didi it work?????");
-        player.openInventory(villagerGui.inv);
         if (e.getNpc().getName().equalsIgnoreCase("Anng")) {
-            //gui
-            //player.sendMessage("didi it work?????");
-
+            plugin.getQuestManager().setPlayer(player);
+            plugin.getQuestManager().setState(Stages.FIRST);
         }
-        if (e.getNpc().getName().equalsIgnoreCase("Anng")) {
-            //gui
-
-
-        }
-        if (e.getNpc().getName().equalsIgnoreCase("Anng")) {
-
-            //gui
-
-
-        }
-        if (e.getNpc().getName().equalsIgnoreCase("Anng")) {
-            //gui
-
-
-        }
-/*
-for(Player on : Bukkit.getOnlinePlayers()){
-    PlayerConnection p = ((CraftPlayer) on).getHandle().b;
-    p.sendPacket(new PacketPlayOutEntityDestroy(e.getNpc().getId()));
-}
-        NPC.getNPC().remove(e.getNpc().getId());
-    }
-
- */
     }
 }

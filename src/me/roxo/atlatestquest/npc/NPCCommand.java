@@ -1,6 +1,7 @@
 package me.roxo.atlatestquest.npc;
 
 import me.roxo.atlatestquest.ATLATestQuest;
+import me.roxo.atlatestquest.npc.avatarnpcs.AirNPC;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,8 +21,11 @@ public class NPCCommand implements CommandExecutor {
             Player player = (Player) sender;
 
                 if (!sender.isOp()) return false;
-               // if(args.length == 0){NPC.createNPC(player, player.getName());return true;}
+
+               // if(args.length == 0){NPC.createNPC(player, player.getName(), plugin);return true;}
                // NPC.createNPC(player,args[0]);
+            AirNPC a = new AirNPC(plugin);
+            a.createWaterNPC();
                 System.out.println(args[0]);
                 //2. save the location
 
