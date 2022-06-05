@@ -1,5 +1,8 @@
 package me.roxo.atlatestquest;
 
+import me.roxo.atlatestquest.commands.StartQuestCommand;
+import me.roxo.atlatestquest.commands.setlocation;
+import me.roxo.atlatestquest.listener.ShiftEvent;
 import me.roxo.atlatestquest.npc.NPCCommand;
 import me.roxo.atlatestquest.npc.npcevents.ClickNPC;
 import me.roxo.atlatestquest.npc.npcevents.JoinNPC;
@@ -9,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ATLATestQuest extends JavaPlugin {
 
-    private ATLATestQuest atlaTestQuest;
+
 
     public QuestManager getQuestManager() {
         return questManager;
@@ -17,18 +20,19 @@ public class ATLATestQuest extends JavaPlugin {
 
     private QuestManager questManager;
 
-    public ATLATestQuest() {
 
-    }
 
     @Override
     public void onEnable(){
-        this.atlaTestQuest = new ATLATestQuest();
         this.questManager = new QuestManager(this);
-        getCommand("createNPC").setExecutor(new NPCCommand(this));
+        getCommand("startquest").setExecutor(new StartQuestCommand(getQuestManager()));
+
+        getCommand("createNPCATLA").setExecutor(new NPCCommand(this));
+        getCommand("setLocation").setExecutor(new setlocation(this));
         getServer().getPluginManager().registerEvents(new MovementListener(),this);
         getServer().getPluginManager().registerEvents(new JoinNPC(this),this);
         getServer().getPluginManager().registerEvents(new ClickNPC(this),this);
+        getServer().getPluginManager().registerEvents(new ShiftEvent(getQuestManager()),this);
 
     }
 
@@ -39,9 +43,7 @@ public class ATLATestQuest extends JavaPlugin {
 
     }
 
-    public ATLATestQuest getAtlaTestQuest(){
-        return atlaTestQuest;
-    }
+
 
 
 

@@ -27,26 +27,12 @@ public class Text {
 
         public void startText() {
             Player player = (Player) questManager.getPlayer();
-            while(count <= 3) {
+
+                    
+
+                System.out.println("x786");
 
 
-                if (count == 1) {
-                    player.sendMessage(ChatColor.AQUA + "Hi " + ChatColor.LIGHT_PURPLE + player.getName() + ChatColor.AQUA + "\n ... I have been waiting for you, I need your help. \n" +
-                            "[" + ChatColor.GREEN + count + "/" + 3 + "]"
-                    );
-                }else if (count == 2) {
-                    player.sendMessage(ChatColor.LIGHT_PURPLE + player.getName() + ChatColor.AQUA + "\n ... I need you to retrieve an item, that is really special to me... \n" +
-                            "[" + ChatColor.GREEN + count + "/" + 3 + "]"
-                    );
-                }else if (count == 3) {
-                    player.sendMessage(ChatColor.AQUA + "It is in " + ChatColor.GREEN + "the cave (to the right of me) bring it back to me!!. \n" +
-                            "[" + ChatColor.GREEN + count + "/" + 3 + "]"
-                    );
-                }
-                if(questManager.isSneakingTrue()){
-                    count++;
-                    questManager.setSneakingTrue(false);
-                }
 
             }
 
@@ -55,7 +41,7 @@ public class Text {
 
 
 
-        }
+
 
 
 

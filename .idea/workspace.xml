@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ATLATestQuest" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca3ea107-e0bb-4cdf-9c76-acd54a6ea7cf" name="Changes" comment="plugin.yml set-up.">
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/commands/StartQuestCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/listener/ShiftEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/text/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+    <list default="true" id="ca3ea107-e0bb-4cdf-9c76-acd54a6ea7cf" name="Changes" comment="Adding Code">
+      <change afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/commands/setlocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/ATLATestQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/ATLATestQuest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/emun/Stages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/emun/Stages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/commands/StartQuestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/commands/StartQuestCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/listener/ShiftEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/listener/ShiftEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPCCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/NPCCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/AirNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/AirNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/EarthNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/EarthNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/FireNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/FireNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/WaterNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/avatarnpcs/WaterNPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/ClickNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/ClickNPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/JoinNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/JoinNPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/MovementListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/npc/npcevents/MovementListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/questmanager/QuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/questmanager/QuestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/roxo/atlatestquest/text/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/roxo/atlatestquest/text/Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654299937020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding Code">
+      <created>1654372123400</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654372123400</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting" />
     <MESSAGE value="plugin.yml set-up." />
-    <option name="LAST_COMMIT_MESSAGE" value="plugin.yml set-up." />
+    <MESSAGE value="Adding Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Code" />
   </component>
 </project>

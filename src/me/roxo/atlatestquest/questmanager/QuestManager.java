@@ -16,7 +16,7 @@ public class QuestManager {
 
     private boolean sneakingTrue;
     private Player player;
-    private Stages stages;
+    private Stages stage;
     private ATLATestQuest plugin;
 
     public QuestManager(ATLATestQuest atlaTestQuest) {
@@ -25,22 +25,25 @@ public class QuestManager {
     }
 
     public void setState(Stages state){
-
+        this.stage = state;
         switch (state){
 
             case FIRST:
             //right click to start
-
+            System.out.println("x1`");
             this.setState(Stages.TEXT);
                 break;
             case TEXT:
             //start text
                 //when finished text
+                System.out.println("x2`");
                 player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(0);
-                Text text = new Text(this);
-                text.startText();
-                this.setState(Stages.THIRD);
+                System.out.println("x3`");
 
+                if(isSneakingTrue()) {
+                    this.setState(Stages.THIRD);
+                }
+                
                 break;
             case THIRD:
                 //make a player normal
@@ -73,8 +76,8 @@ public class QuestManager {
 
     }
 
-    public Stages getStages() {
-        return stages;
+    public Stages getStage() {
+        return stage;
     }
     public void setPlayer(Player player){
         this.player = player;

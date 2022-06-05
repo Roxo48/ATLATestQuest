@@ -36,7 +36,7 @@ public class NPC {
         Location location = plugin.getConfig().getLocation(locOfNpc);
         MinecraftServer server = ((CraftServer) Bukkit.getServer()).getServer();
         WorldServer worldServer = ((CraftWorld)Bukkit.getWorld("world")).getHandle();
-        GameProfile gameProfile = new GameProfile(UUID.randomUUID(), "" );
+        GameProfile gameProfile = new GameProfile(UUID.randomUUID(), " " );
         //Property textures = (Property) npc2.getProfile().getProperties().get("textures").toArray()[0];
         //String[] a = getSkin(player, skin);
 
@@ -94,7 +94,7 @@ public class NPC {
             connection.sendPacket(new PacketPlayOutPlayerInfo(PacketPlayOutPlayerInfo.EnumPlayerInfoAction.a, npc));
             connection.sendPacket((new PacketPlayOutNamedEntitySpawn(npc)));
             connection.sendPacket(new PacketPlayOutEntityHeadRotation(npc, (byte) (npc.getBukkitYaw() * 256/360)));
-            connection.sendPacket(new PacketPlayOutEntity.PacketPlayOutRelEntityMoveLook(1,(short) 1, (short) 1, (short) 1,(byte) (npc.getHeadY() * 256/360),(byte) (npc.getHeadY() * 256/360),true));
+            //connection.sendPacket(new PacketPlayOutEntity.PacketPlayOutRelEntityMoveLook(1,(short) 1, (short) 1, (short) 1,(byte) (npc.getHeadY() * 256/360),(byte) (npc.getHeadY() * 256/360),true));
 
 
 

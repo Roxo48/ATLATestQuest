@@ -26,7 +26,7 @@ public class NPCCommand implements CommandExecutor {
                // NPC.createNPC(player,args[0]);
             AirNPC a = new AirNPC(plugin);
             a.createWaterNPC();
-                System.out.println(args[0]);
+               // System.out.println(args[0]);
                 //2. save the location
 
                 player.sendMessage("NPC Created set!");

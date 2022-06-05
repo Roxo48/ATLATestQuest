@@ -22,7 +22,10 @@ public class ClickNPC implements Listener {
     public void onClick(RightClickNPC e) {
         Player player = e.getPlayer();
         player.sendMessage("didi it work?????");
-        if (e.getNpc().getName().equalsIgnoreCase("Anng")) {
+        System.out.println("x9");
+        System.out.println(e.getNpc().getName());
+        if (e.getNpc().getName().equalsIgnoreCase("")) {
+            System.out.println("x10");
             plugin.getQuestManager().setPlayer(player);
             plugin.getQuestManager().setState(Stages.FIRST);
         }

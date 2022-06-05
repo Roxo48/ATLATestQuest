@@ -34,6 +34,6 @@ public class JoinNPC implements Listener {
     @EventHandler
     public void onQuit(PlayerQuitEvent e){
         PacketReader reader = new PacketReader(e.getPlayer());
-       reader.unInject();
+      // reader.unInject();
     }
 }

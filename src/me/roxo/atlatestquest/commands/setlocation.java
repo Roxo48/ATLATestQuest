@@ -1,19 +1,20 @@
 package me.roxo.atlatestquest.commands;
 
-import me.roxo.atlatestquest.emun.Stages;
-import me.roxo.atlatestquest.questmanager.QuestManager;
+import me.roxo.atlatestquest.ATLATestQuest;
+import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class StartQuestCommand implements CommandExecutor {
+public class setlocation implements CommandExecutor {
 
-    private final QuestManager questManager;
+    private final ATLATestQuest atlaTestQuest;
 
-    public StartQuestCommand(QuestManager questManager) {
-        this.questManager = questManager;
+
+    public setlocation(ATLATestQuest atlaTestQuest) {
+        this.atlaTestQuest = atlaTestQuest;
     }
 
     @Override
@@ -22,9 +23,8 @@ public class StartQuestCommand implements CommandExecutor {
         if(!(commandSender instanceof Player)){
             return false;
         }
-        questManager.setPlayer((Player) commandSender);
-        questManager.setState(Stages.FIRST);
-
+        Location loc = ((Player) commandSender).getLocation();
+        atlaTestQuest.getConfig().set("npcloc", loc);
 
         return false;
     }
