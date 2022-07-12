@@ -37,7 +37,7 @@ public class QuestManager {
             //start text
                 //when finished text
                 System.out.println("x2`");
-                player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(0);
+                player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(0); //player.setWalkSpeed(-.02);
                 System.out.println("x3`");
 
                 if(isSneakingTrue()) {
@@ -47,7 +47,7 @@ public class QuestManager {
                 break;
             case THIRD:
                 //make a player normal
-                player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(1);
+                player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue(1); //player.setWalkSpeed(.2);
                 player.sendMessage(ChatColor.DARK_BLUE + "GO FIND THE ITEM");
 
                 //put a
